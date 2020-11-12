@@ -9,6 +9,7 @@ pipeline {
       steps {
         sh "chmod +x ./scripts/dropdb.sh"
         sh "npm install"
+        sh "npm i mocha"
       }
     }
     stage ("Test") {
